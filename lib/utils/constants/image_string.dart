@@ -6,7 +6,7 @@ class TImages{
   static const String lightAppLogo = "assets/logos/logo_white_mode.png";
 
   //social media logo
-  static const String google ="";
+  static const String google ="assets/logos/google_icon.png";
   static const String facebook ="";
 
   // onboard images

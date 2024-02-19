@@ -6,6 +6,7 @@ import 'package:babycare/utils/constants/text_strings.dart';
 import 'package:babycare/utils/helpers/helper_function.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -119,14 +120,46 @@ class LoginScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Divider(
-                    color: dark ?TColor.darkerGrey : TColor.grey,
-                    thickness: 0.5,
-                    indent: 60,
-                    endIndent: 5,
+                  Flexible(
+                    child: Divider(
+                      color: dark ?TColor.darkerGrey : TColor.grey,
+                      thickness: 0.5,
+                      indent: 60,
+                      endIndent: 5,
+                    ),
+                  ),
+                  Text(TTexts.orSignInWith),
+                  Flexible(
+                    child: Divider(
+                      color: dark ?TColor.darkerGrey : TColor.grey,
+                      thickness: 0.5,
+                      indent: 5,
+                      endIndent: 60,
+                    ),
+                  )
+                ],
+              ),
+
+              ///footer
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      border:Border.all(color: TColor.grey),
+                      borderRadius: BorderRadius.circular(100)
+                    ),
+                    child: IconButton(onPressed: (){}, icon: const Image(
+                      width: TSize.iconMd,
+                      height: TSize.iconMd,
+                      image: AssetImage(TImages.google),
+                      
+                    )),
                   )
                 ],
               )
+
+
             ],
           ),
         ),
