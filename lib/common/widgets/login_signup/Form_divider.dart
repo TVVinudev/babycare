@@ -2,8 +2,8 @@ import 'package:babycare/utils/constants/color.dart';
 import 'package:babycare/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 
-class TLoginDivider extends StatelessWidget {
-  const TLoginDivider({
+class TFormDivider extends StatelessWidget {
+  const TFormDivider({
     super.key, required this.text,
   });
 

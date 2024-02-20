@@ -6,7 +6,7 @@ void main() {
   //todo : init local storage
   //todo : await native splash
   //todo : initialize firebase
-  // todo : initialize authentication
+  //todo : initialize authentication
 
 
   runApp(const App());

@@ -7,9 +7,8 @@ import 'package:babycare/features/authentication/screens/login/widget/login_head
 import 'package:babycare/utils/constants/sizes.dart';
 import 'package:babycare/utils/constants/text_strings.dart';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -27,13 +26,13 @@ class LoginScreen extends StatelessWidget {
               const SizedBox(
                 height: TSize.spaceBtwItems,
               ),
-              TLoginDivider(
+              TFormDivider(
                 text: TTexts.orSignInWith,
               ),
               const SizedBox(
-                height: TSize.spaceBtwSections,
+                height: TSize.spaceBtwItems,
               ),
-              TLoginFooter()
+              TSocialButtons()
             ],
           ),
         ),

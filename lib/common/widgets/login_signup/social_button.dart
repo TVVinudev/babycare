@@ -3,8 +3,8 @@ import 'package:babycare/utils/constants/image_string.dart';
 import 'package:babycare/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
-class TLoginFooter extends StatelessWidget {
-  const TLoginFooter({
+class TSocialButtons extends StatelessWidget {
+  const TSocialButtons({
     super.key,
   });
 

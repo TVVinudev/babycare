@@ -41,7 +41,8 @@ class TColor{
   static const Color black = Color(0xff232323);
   static const Color darkerGrey = Color(0xff4f4f4f);
   static const Color darkGrey = Color(0xFF939393);
-  static const Color grey = Color(0xFFe0e0e0);
+  static const Color grey = Color(0xffefefef);
+
 
   //gradient color
  static const Gradient linerGradient = LinearGradient(
@@ -52,5 +53,7 @@ class TColor{
    Color(0xfffad0c4),
    Color(0xfffad0c4),
  ]);
+
+  static const Color white = Color(0xfffafafa);
 
 }
