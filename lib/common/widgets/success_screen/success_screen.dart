@@ -1,10 +1,9 @@
-import 'package:babycare/features/authentication/screens/login/login.dart';
-import 'package:babycare/utils/constants/image_string.dart';
+
 import 'package:babycare/utils/constants/sizes.dart';
 import 'package:babycare/utils/constants/text_strings.dart';
 import 'package:babycare/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen({super.key, required this.image, required this.successTitle, required this.successSubTitle});
