@@ -1,8 +1,10 @@
+import 'package:babycare/features/authentication/screens/signup/verification_email.dart';
 import 'package:babycare/utils/constants/color.dart';
 import 'package:babycare/utils/constants/sizes.dart';
 import 'package:babycare/utils/constants/text_strings.dart';
 import 'package:babycare/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TSignupForm extends StatelessWidget {
@@ -119,7 +121,7 @@ class TSignupForm extends StatelessWidget {
               height: TSize.spaceBtwSections,
             ),
             ///sign up button
-            SizedBox(width: double.infinity,child: ElevatedButton(onPressed: (){},child:const Text(TTexts.createAccount),),)
+            SizedBox(width: double.infinity,child: ElevatedButton(onPressed: ()=> Get.to(()=> VerificationEmail()),child:const Text(TTexts.createAccount),),)
           ],
         ));
   }

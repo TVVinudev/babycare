@@ -52,4 +52,7 @@ class TTexts {
   static const String yourAccountCreatedSubTitle = "Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping!";
 
   static const String and ="and";
+  static const String labelContinue ="Continue";
+  static const String submit ="Submit";
+
 }

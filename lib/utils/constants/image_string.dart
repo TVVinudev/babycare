@@ -11,8 +11,11 @@ class TImages{
 
   // onboard images
 
-static const String onBoardImage2 = "assets/images/on_boarding_images/deliver.png";
-static const String onBoardImage1= "assets/images/on_boarding_images/searching.png";
-static const String onBoardImage3 = "assets/images/on_boarding_images/shopping.png";
+  static const String onBoardImage2 = "assets/images/on_boarding_images/deliver.png";
+  static const String onBoardImage1= "assets/images/on_boarding_images/searching.png";
+  static const String onBoardImage3 = "assets/images/on_boarding_images/shopping.png";
+
+  static const String verifyEmail = "assets/images/on_boarding_images/signup_email_verification.png";
+  static const String signUpSuccess = "assets/images/on_boarding_images/signup_success.png";
 
 }
