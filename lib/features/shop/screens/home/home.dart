@@ -1,4 +1,5 @@
 import 'package:babycare/common/widgets/custom_shapes/containers/primary_header_container.dart';
+import 'package:babycare/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -7,22 +8,21 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-
-      ),
         body: SingleChildScrollView(
       child: Column(
         children: [
-          TPrimaryHeaderContainer(child: Container(
-
-          ),)
+          TPrimaryHeaderContainer(
+            child: Column(
+              children: [
+                THomeAppBar()
+              ],
+            ),
+          )
         ],
       ),
     ));
   }
 }
-
-
 
 
 

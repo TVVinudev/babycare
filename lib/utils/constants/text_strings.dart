@@ -10,7 +10,7 @@ class TTexts {
 
   //home
   static const String homeAppbarTitle = "good day for shopping";
-  static const String homeAppbarSubTitle = "";
+  static const String homeAppbarSubTitle = "Baby Care";
 
   //Authentication form text
 
