@@ -40,10 +40,10 @@ dependencies:
   http: ^1.2.1
   intl: ^0.19.0
   logger: ^2.0.2+1
-  url_launcher: ^6.2.4
-  flutter_native_splash: ^2.3.11
-  iconsax: ^0.0.8
-  smooth_page_indicator: ^1.1.0
+  url_launcher: ^6.2.4 # redirect the web page
+  flutter_native_splash: ^2.3.11 # splash screen
+  iconsax: ^0.0.8 #icons
+  smooth_page_indicator: ^1.1.0 #page indicator
 
 
 
