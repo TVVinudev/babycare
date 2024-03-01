@@ -18,4 +18,8 @@ class TImages{
   static const String verifyEmail = "assets/images/on_boarding_images/signup_email_verification.png";
   static const String signUpSuccess = "assets/images/on_boarding_images/signup_success.png";
 
+//category icons
+  static const String categoryItem1 = "assets/icons/category/kidswear.png";
+
+
 }
