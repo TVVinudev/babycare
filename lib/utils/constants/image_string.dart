@@ -21,5 +21,11 @@ class TImages{
 //category icons
   static const String categoryItem1 = "assets/icons/category/kidswear.png";
 
+  // banner Images
+
+  static const String promoBanner1 = "assets/images/banner/banner1.jpeg";
+  static const String promoBanner2 = "assets/images/banner/banner2.webp";
+  static const String promoBanner3 = "assets/images/banner/banner3.jpg";
+
 
 }
