@@ -1,9 +1,8 @@
-import 'dart:ffi';
-
-import 'package:babycare/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:babycare/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:babycare/common/widgets/custom_shapes/containers/search_container.dart';
-import 'package:babycare/common/widgets/images/t_round_images.dart';
+import 'package:babycare/common/widgets/layouts/grid_layout.dart';
+import 'package:babycare/common/widgets/product_card/product_card_vertical.dart';
+
 
 import 'package:babycare/common/widgets/texts/section_headings.dart';
 import 'package:babycare/features/shop/screens/home/widgets/home_appbar.dart';
@@ -12,12 +11,7 @@ import 'package:babycare/utils/constants/color.dart';
 import 'package:babycare/utils/constants/image_string.dart';
 
 import 'package:babycare/utils/constants/sizes.dart';
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
-import 'package:flutter/widgets.dart';
-
 import 'widgets/home_categories.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -25,60 +19,76 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
         body: SingleChildScrollView(
-      child: Column(
-        children: [
-          TPrimaryHeaderContainer(
-            child: Column(
-              children: [
-                THomeAppBar(),
+          child: Column(
+            children: [
+              const TPrimaryHeaderContainer(
+                child: Column(
+                  children: [
+                    THomeAppBar(),
 
-                ///app bar
-                SizedBox(height: TSize.spaceBtwSections),
-                TSearchContainer(
-                  text: 'Search',
-                ),
+                    ///app bar
+                    SizedBox(height: TSize.spaceBtwSections),
+                    TSearchContainer(
+                      text: 'Search',
+                    ),
 
-                ///search bar
-                SizedBox(
-                  height: TSize.spaceBtwSections,
-                ),
-                Padding(
-                  padding: EdgeInsets.only(left: TSize.defaultSpace),
-                  child: Column(
-                    children: [
-                      TSectionHeading(
-                        text: 'Popular Category',
-                        showActionButton: false,
-                        textColor: TColor.white,
+                    ///search bar
+                    SizedBox(
+                      height: TSize.spaceBtwSections,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(left: TSize.defaultSpace),
+                      child: Column(
+                        children: [
+                          TSectionHeading(
+                            text: 'Popular Category',
+                            showActionButton: false,
+                            textColor: TColor.white,
+                          ),
+
+                          /// section headings
+                          SizedBox(
+                            height: TSize.spaceBtwItems,
+                          ),
+                          THomeCategories(),
+
+                          ///categories
+                        ],
                       ),
+                    )
+                  ],
+                ),
+              ),
 
-                      /// section headings
-                      SizedBox(
-                        height: TSize.spaceBtwItems,
-                      ),
-                      THomeCategories(),
 
-                      ///categories
-                    ],
-                  ),
-                )
-              ],
-            ),
+
+              Padding(
+                padding: const EdgeInsets.all(TSize.defaultSpace),
+                child: Column(
+                  children: [
+                    ///  carousel banner  ///
+                    const TPromoSlider(banner: [
+                      TImages.promoBanner1,
+                      TImages.promoBanner2,
+                      TImages.promoBanner3
+                    ],),
+                    const SizedBox(
+                      height: TSize.spaceBtwItems,
+                    ),
+
+                    ///grid view///
+
+                    TGridLayout(itemCount: 4,itemBuild: (_,index) => const TProductCardVertical(),),
+                  ],
+                ),
+              ),
+
+
+            ],
           ),
-
-          ///----------------------------------------------------///
-
-          Padding(
-            padding: EdgeInsets.all(TSize.defaultSpace),
-            child: TPromoSlider(banner: [
-              TImages.promoBanner1,TImages.promoBanner2,TImages.promoBanner3
-            ],),
-          )
-        ],
-      ),
-    ));
+        ));
   }
 }
 
