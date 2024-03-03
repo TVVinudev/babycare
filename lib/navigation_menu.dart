@@ -1,4 +1,5 @@
 import 'package:babycare/features/shop/screens/home/home.dart';
+import 'package:babycare/features/shop/screens/store/store.dart';
 import 'package:babycare/utils/constants/color.dart';
 import 'package:babycare/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,6 @@ class NavigationMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     final controller = Get.put(NavigationController());
     final darkMode = THelperFunction.isDarkMode(context);
 
@@ -21,8 +21,10 @@ class NavigationMenu extends StatelessWidget {
           selectedIndex: controller.selectedIndex.value,
           onDestinationSelected: (index) =>
               controller.selectedIndex.value = index,
-          backgroundColor: darkMode? TColor.black : TColor.white,
-          indicatorColor: darkMode? TColor.white.withOpacity(0.1) : TColor.black.withOpacity(0.1),
+          backgroundColor: darkMode ? TColor.black : TColor.white,
+          indicatorColor: darkMode
+              ? TColor.white.withOpacity(0.1)
+              : TColor.black.withOpacity(0.1),
           destinations: const [
             NavigationDestination(
                 icon: Icon(
@@ -47,7 +49,7 @@ class NavigationMenu extends StatelessWidget {
           ],
         ),
       ),
-      body: Obx(()=> controller.screen[controller.selectedIndex.value]),
+      body: Obx(() => controller.screen[controller.selectedIndex.value]),
     );
   }
 }
@@ -56,10 +58,8 @@ class NavigationController extends GetxController {
   final Rx<int> selectedIndex = 0.obs;
 
   final screen = [
-   const HomeScreen(),
-    Container(
-      color: Colors.purple,
-    ),
+    const HomeScreen(),
+    const StoreScreen(),
     Container(
       color: Colors.orange,
     ),
