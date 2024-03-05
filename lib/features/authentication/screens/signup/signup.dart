@@ -24,7 +24,7 @@ class SignupScreen extends StatelessWidget {
             const SizedBox(height: TSize.spaceBtwSections,),
 
             ///form
-            TSignupForm(),
+            const TSignupForm(),
 
             const SizedBox(height: TSize.spaceBtwItems,),
 
@@ -33,7 +33,7 @@ class SignupScreen extends StatelessWidget {
 
             const SizedBox(height: TSize.spaceBtwItems,),
             ///Social button
-            TSocialButtons()
+            const TSocialButtons()
           ]),
         ),
       ),

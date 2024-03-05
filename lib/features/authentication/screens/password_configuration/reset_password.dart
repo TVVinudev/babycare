@@ -14,11 +14,11 @@ class ResetPassword extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         actions: [
-          IconButton(onPressed: ()=>Get.back(), icon: Icon(Icons.clear))
+          IconButton(onPressed: ()=>Get.back(), icon: const Icon(Icons.clear))
         ],
       ),
       body: SingleChildScrollView(
-        child: Padding(padding: EdgeInsets.all(TSize.defaultSpace),
+        child: Padding(padding: const EdgeInsets.all(TSize.defaultSpace),
           child: Column(
             children: [
               Image(
@@ -35,12 +35,12 @@ class ResetPassword extends StatelessWidget {
 
               SizedBox(
                 width: double.infinity,
-                child: ElevatedButton(onPressed: (){}, child: Text(TTexts.submit)),
+                child: ElevatedButton(onPressed: (){}, child: const Text(TTexts.submit)),
               ),
               const SizedBox(height: TSize.spaceBtwItems,),
               SizedBox(
                 width: double.infinity,
-                child: TextButton(onPressed: (){}, child: Text(TTexts.resendEmail)),
+                child: TextButton(onPressed: (){}, child: const Text(TTexts.resendEmail)),
               ),
 
 

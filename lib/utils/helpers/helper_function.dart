@@ -19,6 +19,7 @@ class THelperFunction {
     } else if (value == 'White') {
       return Colors.white;
     }
+    return null;
   }
 
   static void showSnackBar(String message) {

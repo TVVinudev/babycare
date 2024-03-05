@@ -1,15 +1,8 @@
 import 'package:babycare/features/authentication/screens/onboarding/widget/onboarding_next_page.dart';
-import 'package:babycare/utils/constants/color.dart';
 import 'package:babycare/utils/constants/image_string.dart';
-import 'package:babycare/utils/constants/sizes.dart';
 import 'package:babycare/utils/constants/text_strings.dart';
-import 'package:babycare/utils/devices/device_utility.dart';
-import 'package:babycare/utils/helpers/helper_function.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:iconsax/iconsax.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../../controllers/onboarding/onboarding_controller.dart';
 import 'widget/onboard_page.dart';
@@ -31,7 +24,7 @@ class OnBoardingScreen extends StatelessWidget {
           PageView(
             controller: controller.pageController,
             onPageChanged: controller.updatePageIndicator,
-            children: [
+            children: const [
               OnBoardPage(
                 image: TImages.onBoardImage1,
                 title: TTexts.onBoardingSubTitle1,
@@ -56,7 +49,7 @@ class OnBoardingScreen extends StatelessWidget {
           const onBoardingDotNavigation(),
 
           //Circular Button
-          OnBoardingNextButton()
+          const OnBoardingNextButton()
         ],
       ),
     );

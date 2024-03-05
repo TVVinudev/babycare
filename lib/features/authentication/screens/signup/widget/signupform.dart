@@ -26,7 +26,7 @@ class TSignupForm extends StatelessWidget {
                 Expanded(
                   child: TextFormField(
                     expands: false,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         labelText: TTexts.firstName,
                         prefixIcon: Icon(Iconsax.user)),
                   ),
@@ -37,7 +37,7 @@ class TSignupForm extends StatelessWidget {
                 Expanded(
                   child: TextFormField(
                     expands: false,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                         labelText: TTexts.lastName,
                         prefixIcon: Icon(Iconsax.user)),
                   ),
@@ -121,7 +121,7 @@ class TSignupForm extends StatelessWidget {
               height: TSize.spaceBtwSections,
             ),
             ///sign up button
-            SizedBox(width: double.infinity,child: ElevatedButton(onPressed: ()=> Get.to(()=> VerificationEmail()),child:const Text(TTexts.createAccount),),)
+            SizedBox(width: double.infinity,child: ElevatedButton(onPressed: ()=> Get.to(()=> const VerificationEmail()),child:const Text(TTexts.createAccount),),)
           ],
         ));
   }

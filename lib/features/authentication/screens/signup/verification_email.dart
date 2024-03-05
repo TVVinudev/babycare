@@ -18,7 +18,7 @@ class VerificationEmail extends StatelessWidget {
         actions: [
           IconButton(
               onPressed: () => Get.offAll(() => const LoginScreen()),
-              icon: Icon(Icons.clear))
+              icon: const Icon(Icons.clear))
         ],
       ),
       body: SingleChildScrollView(
@@ -59,11 +59,11 @@ class VerificationEmail extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () => Get.to(() => SuccessScreen(
+                  onPressed: () => Get.to(() => const SuccessScreen(
                       image: TImages.signUpSuccess,
                       successTitle: TTexts.yourAccountCreatedTitle,
                       successSubTitle: TTexts.yourAccountCreatedSubTitle)),
-                  child: Text(TTexts.labelContinue)),
+                  child: const Text(TTexts.labelContinue)),
             ),
             const SizedBox(
               height: TSize.spaceBtwItems,
@@ -71,7 +71,7 @@ class VerificationEmail extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: TextButton(
-                  onPressed: () {}, child: Text(TTexts.resendEmail)),
+                  onPressed: () {}, child: const Text(TTexts.resendEmail)),
             )
           ]),
         ),

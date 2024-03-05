@@ -1,5 +1,7 @@
+import 'package:babycare/features/personalization/screens/settings/settings.dart';
 import 'package:babycare/features/shop/screens/home/home.dart';
 import 'package:babycare/features/shop/screens/store/store.dart';
+import 'package:babycare/features/shop/screens/wishlist/wishlist.dart';
 import 'package:babycare/utils/constants/color.dart';
 import 'package:babycare/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
@@ -60,11 +62,7 @@ class NavigationController extends GetxController {
   final screen = [
     const HomeScreen(),
     const StoreScreen(),
-    Container(
-      color: Colors.orange,
-    ),
-    Container(
-      color: Colors.blue,
-    )
+    const WishlistScreen(),
+    const SettingScreen()
   ];
 }

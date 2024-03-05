@@ -70,16 +70,16 @@ class TProductCardVertical extends StatelessWidget {
               ),
             ),
             const SizedBox(height: TSize.spaceBtwItems / 2),
-            Padding(
-              padding: const EdgeInsets.only(left: TSize.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: TSize.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const TProductTitleText(
+                  TProductTitleText(
                     text: 'Blue Bird Nike',
                     smallSize: true,
                   ),
-                  const SizedBox(height: TSize.spaceBtwItems / 2),
+                  SizedBox(height: TSize.spaceBtwItems / 2),
                   TBrandTitleWithVerifiedIcon(title: 'Nike',),
 
                 ],
