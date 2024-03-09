@@ -3,9 +3,11 @@ import 'package:babycare/common/widgets/custom_shapes/containers/primary_header_
 import 'package:babycare/common/widgets/list_tiles/settings_menu_tile.dart';
 import 'package:babycare/common/widgets/list_tiles/user-Profile_tile.dart';
 import 'package:babycare/common/widgets/texts/section_headings.dart';
+import 'package:babycare/features/personalization/screens/profile/profile.dart';
 import 'package:babycare/utils/constants/color.dart';
 import 'package:babycare/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SettingScreen extends StatelessWidget {
@@ -22,13 +24,13 @@ class SettingScreen extends StatelessWidget {
               child: Column(
                 children: [
                   TAppBar(
-                    title: Text('Profile',
+                    title: Text('Account',
                         style: Theme.of(context)
                             .textTheme
                             .headlineMedium!
                             .apply(color: TColor.white)),
                   ),
-                  const TUserProfileTile(),
+                  TUserProfileTile(onPress: ()=> Get.to(() => const ProfileScreen()),),
                   const SizedBox(height: TSize.spaceBtwSections),
                 ],
               ),
@@ -52,7 +54,7 @@ class SettingScreen extends StatelessWidget {
                   const SizedBox(height: TSize.spaceBtwSections,),
                   const TSectionHeading(text: 'App Settings',showActionButton: false,),
                   const SizedBox(height: TSize.spaceBtwItems,),
-                  const TSettingMenuTile(icon: Iconsax.document_upload, title: 'Load Data', subtitle: 'upload data to your cloud database'),
+                  TSettingMenuTile(icon: Iconsax.document_upload, title: 'Load Data', subtitle: 'upload data to your cloud database',onTap: (){},),
                   TSettingMenuTile(icon: Iconsax.location, title: 'Location', subtitle: 'set recommended based on location',trailing: Switch(value: true, onChanged: (value){}),),
                   TSettingMenuTile(icon: Iconsax.security_user, title: 'Safe mode', subtitle: 'search result is safe for all ages',trailing: Switch(value: false, onChanged: (value){}),),
                   TSettingMenuTile(icon: Iconsax.image, title: 'HD image quality', subtitle: 'set image quality to be seen',trailing: Switch(value: true, onChanged: (value){}),),
@@ -63,7 +65,7 @@ class SettingScreen extends StatelessWidget {
                     width: double.infinity,
                     child: OutlinedButton(onPressed: (){}, child: const Text('Logout')),
                   ),
-                  const SizedBox(height: TSize.spaceBtwSections * 2.5),
+                  const SizedBox(height: TSize.spaceBtwSections * 2),
 
                 ],
               ),
