@@ -45,6 +45,7 @@ dependencies:
   iconsax: ^0.0.8 #icons
   smooth_page_indicator: ^1.1.0 #page indicator
   carousel_slider: ^4.2.1
+  readmore: ^2.2.0
 
 
 
