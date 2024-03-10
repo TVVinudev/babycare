@@ -2,12 +2,8 @@ import 'package:babycare/common/widgets/appbar/appbar.dart';
 import 'package:babycare/common/widgets/products/cart/rating/rating_bar_indicator.dart';
 import 'package:babycare/features/shop/screens/product_details/widgets/rating_progress_indicator.dart';
 import 'package:babycare/features/shop/screens/product_review/widget/user_review_card.dart';
-import 'package:babycare/utils/constants/color.dart';
 import 'package:babycare/utils/constants/sizes.dart';
-import 'package:babycare/utils/devices/device_utility.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:iconsax/iconsax.dart';
 
 class ProductReviewScreen extends StatelessWidget {
   const ProductReviewScreen({super.key});
