@@ -47,5 +47,10 @@ class TImages{
   //profile
   static const String user = "assets/icons/profile_icons/user.png";
 
+  //review profile
+
+  static const String profileUser1 = "assets/images/user_reviews/profile1.png";
+  static const String profileUser2 = "assets/images/user_reviews/profile2.png";
+  static const String profileUser3=  "assets/images/user_reviews/profile3.png";
 
 }

@@ -5,10 +5,12 @@ import 'package:babycare/features/shop/screens/product_details/widgets/bottom_ad
 import 'package:babycare/features/shop/screens/product_details/widgets/product_attributes.dart';
 import 'package:babycare/features/shop/screens/product_details/widgets/product_metadata.dart';
 import 'package:babycare/features/shop/screens/product_details/widgets/rating_and_share.dart';
+import 'package:babycare/features/shop/screens/product_review/product_review.dart';
 
 import 'package:babycare/utils/constants/sizes.dart';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
@@ -63,7 +65,9 @@ class ProductDetailScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const TSectionHeading(text: 'Review(199)',showActionButton: false,),
-                    IconButton(onPressed: (){}, icon: const Icon(Iconsax.arrow_right_3,size: 18))
+                    IconButton(
+                        onPressed: ()=>Get.to(()=>const ProductReviewScreen()),
+                        icon: const Icon(Iconsax.arrow_right_3,size: 18))
                   ],
                 ),
                 const SizedBox(height: TSize.spaceBtwSections,),
