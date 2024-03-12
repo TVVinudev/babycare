@@ -1,5 +1,7 @@
+import 'package:babycare/features/shop/screens/cart/cart.dart';
 import 'package:babycare/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../../common/widgets/appbar/appbar.dart';
 import '../../../../../common/widgets/products/cart/cart_menu_icon.dart';
@@ -16,7 +18,6 @@ class THomeAppBar extends StatelessWidget {
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-
           Text(
             TTexts.homeAppbarTitle,
             style: Theme.of(context)
@@ -34,7 +35,10 @@ class THomeAppBar extends StatelessWidget {
         ],
       ),
       action: [
-        TCartCounterIcon(onPress: (){}, iconColor: TColor.white,)
+        TCartCounterIcon(
+          onPress: (){},
+          iconColor: TColor.white,
+        )
       ],
     );
   }
