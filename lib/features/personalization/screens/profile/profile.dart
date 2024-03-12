@@ -3,9 +3,7 @@ import 'package:babycare/common/widgets/images/t_circular_images.dart';
 import 'package:babycare/common/widgets/texts/section_headings.dart';
 import 'package:babycare/utils/constants/image_string.dart';
 import 'package:babycare/utils/constants/sizes.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 
 import 'widget/profile_menu.dart';

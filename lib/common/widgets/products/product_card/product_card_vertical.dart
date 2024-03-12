@@ -93,9 +93,13 @@ class TProductCardVertical extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  ///pricing
+                  const Padding(
+                    padding: EdgeInsets.only(left: TSize.sm),
+                    child: TProductPrice(price: '45.8',),
+                  ),
 
-                  const TProductPrice(price: '45.8',),
-
+                  ///Add to cart
                   Container(
                     decoration: const BoxDecoration(
                         color: TColor.dark,

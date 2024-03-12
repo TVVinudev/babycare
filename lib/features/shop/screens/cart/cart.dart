@@ -1,13 +1,8 @@
 import 'package:babycare/common/widgets/appbar/appbar.dart';
-import 'package:babycare/common/widgets/products/cart/cart_items.dart';
-import 'package:babycare/common/widgets/products/rating/add_remove_button.dart';
-import 'package:babycare/common/widgets/texts/product_price_text.dart';
 import 'package:babycare/features/shop/screens/cart/checkout/checkout.dart';
 import 'package:babycare/utils/constants/sizes.dart';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import 'widgets/cart_items.dart';
 
 

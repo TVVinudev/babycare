@@ -1,7 +1,5 @@
-import 'package:babycare/features/shop/screens/cart/cart.dart';
 import 'package:babycare/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import '../../../../../common/widgets/appbar/appbar.dart';
 import '../../../../../common/widgets/products/cart/cart_menu_icon.dart';
