@@ -1,11 +1,12 @@
 import 'package:babycare/common/widgets/custom_shapes/containers/rounded_container.dart';
-import 'package:babycare/common/widgets/products/cart/rating/rating_bar_indicator.dart';
 import 'package:babycare/utils/constants/color.dart';
 import 'package:babycare/utils/constants/image_string.dart';
 import 'package:babycare/utils/constants/sizes.dart';
 import 'package:babycare/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:readmore/readmore.dart';
+
+import '../../../../../common/widgets/products/rating/rating_bar_indicator.dart';
 
 class UserReviewCard extends StatelessWidget {
   const UserReviewCard({super.key});

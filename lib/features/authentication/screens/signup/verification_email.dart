@@ -1,5 +1,6 @@
 import 'package:babycare/common/widgets/success_screen/success_screen.dart';
 import 'package:babycare/features/authentication/screens/login/login.dart';
+import 'package:babycare/navigation_menu.dart';
 import 'package:babycare/utils/constants/image_string.dart';
 import 'package:babycare/utils/constants/sizes.dart';
 import 'package:babycare/utils/constants/text_strings.dart';
@@ -59,10 +60,12 @@ class VerificationEmail extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () => Get.to(() => const SuccessScreen(
+                  onPressed: () => Get.to(() => SuccessScreen(
                       image: TImages.signUpSuccess,
                       successTitle: TTexts.yourAccountCreatedTitle,
-                      successSubTitle: TTexts.yourAccountCreatedSubTitle)),
+                      successSubTitle: TTexts.yourAccountCreatedSubTitle,
+                      onPress: (){},
+                  )),
                   child: const Text(TTexts.labelContinue)),
             ),
             const SizedBox(

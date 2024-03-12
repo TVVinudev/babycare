@@ -1,7 +1,7 @@
 import 'package:babycare/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:babycare/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:babycare/common/widgets/layouts/grid_layout.dart';
-import 'package:babycare/common/widgets/product_card/product_card_vertical.dart';
+import 'package:babycare/common/widgets/products/product_card/product_card_vertical.dart';
 
 
 import 'package:babycare/common/widgets/texts/section_headings.dart';

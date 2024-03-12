@@ -1,6 +1,6 @@
 import 'package:babycare/common/widgets/brand/brand_ShowCase.dart';
 import 'package:babycare/common/widgets/layouts/grid_layout.dart';
-import 'package:babycare/common/widgets/product_card/product_card_vertical.dart';
+import 'package:babycare/common/widgets/products/product_card/product_card_vertical.dart';
 import 'package:babycare/common/widgets/texts/section_headings.dart';
 import 'package:babycare/utils/constants/image_string.dart';
 import 'package:babycare/utils/constants/sizes.dart';

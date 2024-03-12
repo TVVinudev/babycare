@@ -1,10 +1,14 @@
 import 'package:babycare/common/widgets/appbar/appbar.dart';
 import 'package:babycare/common/widgets/products/cart/cart_items.dart';
-import 'package:babycare/common/widgets/products/cart/rating/add_remove_button.dart';
+import 'package:babycare/common/widgets/products/rating/add_remove_button.dart';
 import 'package:babycare/common/widgets/texts/product_price_text.dart';
+import 'package:babycare/features/shop/screens/cart/checkout/checkout.dart';
 import 'package:babycare/utils/constants/sizes.dart';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import 'widgets/cart_items.dart';
 
 
 class CartScreen extends StatelessWidget {
@@ -20,38 +24,18 @@ class CartScreen extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineSmall,
           ),
           showBackArrow: true),
-      body: Padding(
-        padding: const EdgeInsets.all(TSize.defaultSpace),
-        child: ListView.separated(
-          shrinkWrap: true,
-            separatorBuilder: (_, __) => const SizedBox(height: TSize.spaceBtwSections,),
-            itemCount: 8,
-            itemBuilder: (_, index) =>  const Column(
-                  children: [
-                    TCartItem(),
-                    SizedBox(height: TSize.spaceBtwItems,),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Row(
-                          children: [
-                            ///extra space
-                            SizedBox(width: 70,),
-                            ///Add or remove button
-                            TProductQuantityWithAddOrRemoveButton(),
-                          ],
-                        ),
-
-                        TProductPrice(price: '45')
-
-                      ],
-                    )
-                  ],
-                )),
+      body: const Padding(
+        padding: EdgeInsets.all(TSize.defaultSpace),
+        ///items in cart
+        child: CartItems(),
       ),
+
+      ///Checkout button
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.all(TSize.defaultSpace),
-        child: ElevatedButton(onPressed: (){},child: const Text('checkout \$180'),),
+        child: ElevatedButton(
+          onPressed: ()=>Get.to(()=>const TCheckoutScreen()),
+          child: const Text('checkout \$45'),),
       ),
     );
   }
