@@ -5,6 +5,7 @@ import 'package:babycare/common/widgets/list_tiles/user-Profile_tile.dart';
 import 'package:babycare/common/widgets/texts/section_headings.dart';
 import 'package:babycare/features/personalization/screens/address/address.dart';
 import 'package:babycare/features/personalization/screens/profile/profile.dart';
+import 'package:babycare/features/shop/screens/order/order.dart';
 import 'package:babycare/utils/constants/color.dart';
 import 'package:babycare/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -46,7 +47,7 @@ class SettingScreen extends StatelessWidget {
                   const SizedBox(height: TSize.spaceBtwItems,),
                   TSettingMenuTile(icon: Iconsax.safe_home, title: 'My Address', subtitle: 'Set shopping delivery address',onTap: ()=> Get.to(()=>const UserAddressScreen()),),
                   TSettingMenuTile(icon: Iconsax.shopping_cart, title: 'My cart', subtitle: 'Add, remove product and move checkout',onTap: (){},),
-                  TSettingMenuTile(icon: Iconsax.bag_tick, title: 'My Order', subtitle: 'In-progress and complete orders',onTap: (){},),
+                  TSettingMenuTile(icon: Iconsax.bag_tick, title: 'My Order', subtitle: 'In-progress and complete orders',onTap:  ()=> Get.to(()=>const OrderScreen()),),
                   TSettingMenuTile(icon: Iconsax.bank, title: 'Bank Account', subtitle: 'Withdraw balance to registered Bank account',onTap: (){},),
                   TSettingMenuTile(icon: Iconsax.discount_shape, title: 'My Coupons', subtitle: 'List of All the discount Coupons',onTap: (){},),
                   TSettingMenuTile(icon: Iconsax.notification, title: 'Notification', subtitle: 'Set any kind of notification',onTap: (){},),
