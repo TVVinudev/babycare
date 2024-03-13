@@ -5,6 +5,7 @@ import 'package:babycare/common/widgets/products/product_card/product_card_verti
 
 
 import 'package:babycare/common/widgets/texts/section_headings.dart';
+import 'package:babycare/features/shop/screens/all_products/all_products.dart';
 import 'package:babycare/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:babycare/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:babycare/utils/constants/color.dart';
@@ -12,6 +13,7 @@ import 'package:babycare/utils/constants/image_string.dart';
 
 import 'package:babycare/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'widgets/home_categories.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -79,7 +81,7 @@ class HomeScreen extends StatelessWidget {
                     const SizedBox(
                       height: TSize.spaceBtwItems,
                     ),
-                    TSectionHeading(text: 'Popular Products',onPress: (){}),
+                    TSectionHeading(text: 'Popular Products',onPress: () => Get.to(() => const AllProducts() )),
                     const SizedBox(
                       height: TSize.spaceBtwItems,
                     ),
