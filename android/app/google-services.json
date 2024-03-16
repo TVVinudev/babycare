@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "628601536162",
+    "project_id": "babycare-ffe27",
+    "storage_bucket": "babycare-ffe27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628601536162:android:ad28b06bf7f909a2a3a1fb",
+        "android_client_info": {
+          "package_name": "com.example.babycare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjNmCFYKzCqtGclUL48TC9UYNppIBoBXw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
