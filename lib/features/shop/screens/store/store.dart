@@ -5,6 +5,7 @@ import 'package:babycare/common/widgets/custom_shapes/containers/search_containe
 import 'package:babycare/common/widgets/layouts/grid_layout.dart';
 import 'package:babycare/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:babycare/common/widgets/texts/section_headings.dart';
+import 'package:babycare/features/shop/screens/brands/all_brands.dart';
 import 'package:babycare/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:babycare/utils/constants/color.dart';
 import 'package:babycare/utils/constants/sizes.dart';
@@ -12,6 +13,7 @@ import 'package:babycare/utils/helpers/helper_function.dart';
 
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -63,7 +65,7 @@ class StoreScreen extends StatelessWidget {
                         ),
                         TSectionHeading(
                           text: 'Brands',
-                          onPress: () {},
+                          onPress: () => Get.to(()=>const AllBrandsScreen()),
                         ),
                         const SizedBox(
                           height: TSize.spaceBtwItems,
