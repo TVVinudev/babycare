@@ -1,5 +1,4 @@
-import 'package:babycare/features/authentication/screens/onboarding/onboarding.dart';
-import 'package:babycare/navigation_menu.dart';
+
 import 'package:babycare/utils/constants/color.dart';
 import 'package:babycare/utils/themes/theme.dart';
 import 'package:flutter/material.dart';
