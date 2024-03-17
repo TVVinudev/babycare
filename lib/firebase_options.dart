@@ -67,6 +67,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '628601536162',
     projectId: 'babycare-ffe27',
     storageBucket: 'babycare-ffe27.appspot.com',
+    androidClientId: '628601536162-g8n6iid789e8eabckrci3b973v21o9a6.apps.googleusercontent.com',
+    iosClientId: '628601536162-u3tjenf7eaqu18o7t43ugip3lv3d0tjf.apps.googleusercontent.com',
     iosBundleId: 'com.example.babycare',
   );
 
@@ -76,6 +78,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '628601536162',
     projectId: 'babycare-ffe27',
     storageBucket: 'babycare-ffe27.appspot.com',
+    androidClientId: '628601536162-g8n6iid789e8eabckrci3b973v21o9a6.apps.googleusercontent.com',
+    iosClientId: '628601536162-qgrc0vdeo7lfs5rat6p2l9qnmoveinuk.apps.googleusercontent.com',
     iosBundleId: 'com.example.babycare.RunnerTests',
   );
 }

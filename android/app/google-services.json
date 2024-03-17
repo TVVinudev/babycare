@@ -12,7 +12,20 @@
           "package_name": "com.example.babycare"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "628601536162-g8n6iid789e8eabckrci3b973v21o9a6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.babycare",
+            "certificate_hash": "37d8670aa92aa9f45c8086b927e9d7f9a4fc05e4"
+          }
+        },
+        {
+          "client_id": "628601536162-h3cqk4b2btce8jsd7rvesr9kqmcdhd7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDjNmCFYKzCqtGclUL48TC9UYNppIBoBXw"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628601536162-h3cqk4b2btce8jsd7rvesr9kqmcdhd7u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "628601536162-qgrc0vdeo7lfs5rat6p2l9qnmoveinuk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.babycare.RunnerTests"
+              }
+            }
+          ]
         }
       }
     }
